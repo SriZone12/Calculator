@@ -1,0 +1,97 @@
+/* General Page Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightblue;
+}
+
+/* Calculator Container */
+.calculator {
+    width: 300px;
+    background-color: lightpink;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+/* The Screen/Display */
+.display {
+    background-color: #222;
+    color: #fff;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 2.5rem;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:7px;
+    overflow: hidden;
+}
+
+/* Grid Layout for Buttons */
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Columns */
+    gap: 15px;
+}
+
+/* Button Styling */
+button {
+    border: none;
+    outline: none;
+    background-color: #e0e0e0;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%; /* Makes buttons round */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    aspect-ratio: 1; /* Ensures perfect circles */
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: #d4d4d4;
+    transform: translateY(-2px);
+}
+
+/* Active (Click) Effect */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Specific Styles for Operator (+) */
+.operator {
+    background-color: #ff9f0a;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #e68e00;
+}
+
+/* Specific Styles for Equals (=) */
+.equal-sign {
+    background-color: #34c759;
+    color: white;
+}
+
+.equal-sign:hover {
+    background-color: #2da84a;
+}
+
+.ac-button { background-color: #ff3b30; color: white; }
+.ac-button:hover { background-color: #d63027; }
